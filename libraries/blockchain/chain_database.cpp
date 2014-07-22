@@ -1340,7 +1340,7 @@ namespace bts { namespace blockchain {
    :my( new detail::chain_database_impl() )
    {
       my->self = this;
-      my->_skip_signature_verification = true;
+      my->_skip_signature_verification = false;
       my->_priority_fee = BTS_BLOCKCHAIN_DEFAULT_PRIORITY_FEE;
    }
 
